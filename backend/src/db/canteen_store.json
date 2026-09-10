@@ -1,0 +1,2943 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "SVKM Admin",
+      "email": "admin@svkm.edu",
+      "password": "admin",
+      "role": "admin",
+      "canteen": "all",
+      "food_pref": "all",
+      "loyalty_count": 0,
+      "svkm_coins": 100
+    },
+    {
+      "id": 2,
+      "name": "Aarav Shah",
+      "email": "student@svkm.edu",
+      "password": "student",
+      "role": "student",
+      "canteen": "ground",
+      "food_pref": "jain",
+      "loyalty_count": 16,
+      "svkm_coins": 59
+    },
+    {
+      "id": 3,
+      "name": "Prof. Kothari",
+      "email": "teacher@svkm.edu",
+      "password": "teacher",
+      "role": "teacher",
+      "canteen": "6th_floor",
+      "food_pref": "jain",
+      "loyalty_count": 4,
+      "svkm_coins": 25
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "name": "Classic Amul Butter Pav Bhaji",
+      "desc": "Mashed spiced vegetables cooked on a tawa with copious Amul butter. Served with 2 soft buttered pavs, diced red onion, and lemon wedge.",
+      "price": 130,
+      "category": "Street Food & Chaat",
+      "canteen_ids": [
+        "ground"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.9,
+      "reviews_count": 612,
+      "prep_time": 8,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Mumbai Street",
+        "Spicy / Tikhat"
+      ],
+      "image_url": "/images/food/pav-bhaji.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Butter Pav Jodi (2 pcs)",
+          "price": 25
+        },
+        {
+          "name": "Extra Amul Butter Dollop",
+          "price": 20
+        },
+        {
+          "name": "Grated Amul Cheese Topping",
+          "price": 35
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jain Special Butter Pav Bhaji",
+      "desc": "100% Jain certified recipe made from boiled raw banana, tomatoes, green peas, and capsicum. Cooked in Amul butter with no root vegetables.",
+      "price": 140,
+      "category": "Street Food & Chaat",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.8,
+      "reviews_count": 420,
+      "prep_time": 8,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Mumbai Street"
+      ],
+      "image_url": "/images/food/pav-bhaji.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Butter Pav Jodi (2 pcs)",
+          "price": 25
+        },
+        {
+          "name": "Extra Cheese Topping",
+          "price": 35
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mumbai Jumbo Vada Pav",
+      "desc": "Golden crispy spiced batata vada nestled inside fresh pav bun with fiery red garlic lasun chutney and spicy green mint sauce.",
+      "price": 35,
+      "category": "Street Food & Chaat",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.9,
+      "reviews_count": 850,
+      "prep_time": 3,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Mumbai Street",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/vada-pav.jpg",
+      "custom_options": [
+        {
+          "name": "Fried Green Salted Chillies",
+          "price": 5
+        },
+        {
+          "name": "Extra Red Garlic Chutney",
+          "price": 5
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Cheese Schezwan Vada Pav Grill",
+      "desc": "College favorite hot-pressed grilled vada pav loaded with melted mozzarella cheese and spicy wok-tossed Schezwan sauce.",
+      "price": 55,
+      "category": "Street Food & Chaat",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.8,
+      "reviews_count": 530,
+      "prep_time": 5,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Spicy / Tikhat",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/vada-pav.jpg",
+      "custom_options": [
+        {
+          "name": "Double Cheese Burst",
+          "price": 25
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Crispy Punjabi Samosa (Plate of 2)",
+      "desc": "Flaky, crisp golden pastry filled with hearty cumin-spiced potatoes and green peas. Served with sweet tamarind and spicy mint chutneys.",
+      "price": 45,
+      "category": "Street Food & Chaat",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "North India",
+      "rating": 4.7,
+      "reviews_count": 490,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/samosa.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Fried Chillies",
+          "price": 5
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Kutchi Dabeli (Double Butter & Peanuts)",
+      "desc": "Spicy sweet potato mash inside toasted pav bun, loaded with spiced masala peanuts, sweet pomegranate pearls, and nylon sev.",
+      "price": 45,
+      "category": "Street Food & Chaat",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Gujarat",
+      "rating": 4.7,
+      "reviews_count": 360,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Gujarat Specialty",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/dabeli.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Cheese Grated",
+          "price": 20
+        },
+        {
+          "name": "Extra Masala Peanuts",
+          "price": 10
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Kolhapuri Kat Misal Pav (Spicy)",
+      "desc": "Fiery sprouted moth bean curry topped with crunchy farsan mix, fresh onions, coriander, and served with 2 pavs and lemon.",
+      "price": 100,
+      "category": "Street Food & Chaat",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.8,
+      "reviews_count": 390,
+      "prep_time": 6,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Spicy / Tikhat",
+        "Mumbai Street"
+      ],
+      "image_url": "/images/food/misal-pav.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Kat (Rassa Bowl)",
+          "price": 20
+        },
+        {
+          "name": "Extra Farsan Bowl",
+          "price": 20
+        },
+        {
+          "name": "Extra Pav Jodi",
+          "price": 25
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Desi Ghee Kanda Poha with Sev",
+      "desc": "Light, fluffy flattened rice tempered with mustard seeds, turmeric, green chillies, curry leaves, and crunchy roasted peanuts.",
+      "price": 50,
+      "category": "Street Food & Chaat",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.8,
+      "reviews_count": 310,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/poha.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Nylon Sev",
+          "price": 10
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Irani Bun Maska Jam",
+      "desc": "Fresh, warm soft bakery bun generously layered with Amul white butter and sweet mixed fruit strawberry jam.",
+      "price": 40,
+      "category": "Street Food & Chaat",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.9,
+      "reviews_count": 580,
+      "prep_time": 3,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/bun-maska.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Butter Dollop",
+          "price": 15
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Mumbai Beach Bhel Puri",
+      "desc": "Crisp puffed rice tossed with diced onions, boiled potatoes, tangy tamarind chutney, spicy coriander paste, and crunchy papdi.",
+      "price": 60,
+      "category": "Street Food & Chaat",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.7,
+      "reviews_count": 420,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Mumbai Street",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/bhel-puri.jpg",
+      "custom_options": [
+        {
+          "name": "Make it Sukha Bhel",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Crispy Sev Puri Chaat (6 Pcs)",
+      "desc": "Crispy flat puris laden with diced potatoes, sprouted beans, trio of sweet, tangy and spicy chutneys, and a mountain of yellow nylon sev.",
+      "price": 70,
+      "category": "Street Food & Chaat",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.9,
+      "reviews_count": 670,
+      "prep_time": 5,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Mumbai Street",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/sev-puri.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Cheese Topping",
+          "price": 25
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Golden Pani Puri (8 Pcs with Pudina Pani)",
+      "desc": "Crisp puffed puris filled with ragda sprouts and drowned in ice-chilled mint coriander spicy water and sweet dates chutney.",
+      "price": 50,
+      "category": "Street Food & Chaat",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.9,
+      "reviews_count": 910,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Mumbai Street",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/pani-puri.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Theeka Spicy Water",
+          "price": 0
+        },
+        {
+          "name": "Sweet Meetha Only",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Chilled Dahi Batata Puri (6 Pcs)",
+      "desc": "Crispy puris stuffed with potato masala, whipped sweetened curd, roasted cumin, tamarind glaze, and sev sprinkles.",
+      "price": 80,
+      "category": "Street Food & Chaat",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.8,
+      "reviews_count": 380,
+      "prep_time": 5,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Mumbai Street"
+      ],
+      "image_url": "/images/food/dahi-puri.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Dahi Curd",
+          "price": 15
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Tri-Layer Grilled Vegetable Cheese Sandwich",
+      "desc": "Three slices of buttered bread filled with cucumber, beetroot, tomato, potato masala, and melted cheese with crisp golden grill marks.",
+      "price": 90,
+      "category": "Street Food & Chaat",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.8,
+      "reviews_count": 540,
+      "prep_time": 7,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Mumbai Street"
+      ],
+      "image_url": "/images/food/grilled-sandwich.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Amul Cheese",
+          "price": 25
+        },
+        {
+          "name": "Add Toast Butter",
+          "price": 10
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Cheese Chilli Toast (Open-Faced Grill)",
+      "desc": "Thick crust bread smothered in spiced cheddar and mozzarella cheese, finely diced green chillies, and baked till bubbling golden.",
+      "price": 85,
+      "category": "Street Food & Chaat",
+      "canteen_ids": [
+        "ground"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.7,
+      "reviews_count": 290,
+      "prep_time": 6,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Spicy / Tikhat"
+      ],
+      "image_url": "/images/food/cheese-toast.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Spicy Chillies",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Spiced Paneer Tikka Frankie Roll",
+      "desc": "Soft warm paratha wrap rolled with marinated chargrilled paneer cubes, crunchy onions, and tangy chaat frankie masala.",
+      "price": 95,
+      "category": "Street Food & Chaat",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.8,
+      "reviews_count": 480,
+      "prep_time": 6,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "High Protein"
+      ],
+      "image_url": "/images/food/frankie-roll.jpg",
+      "custom_options": [
+        {
+          "name": "Add Grated Cheese",
+          "price": 25
+        },
+        {
+          "name": "Schezwan Sauce Touch",
+          "price": 10
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Surati Locho with Butter & Sev",
+      "desc": "Surat's famed steamed gram flour delicacy served steaming hot with a generous dollop of Amul butter, spicy green chutney, and crunchy sev.",
+      "price": 90,
+      "category": "Gujarati Special",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Gujarat",
+      "rating": 4.9,
+      "reviews_count": 340,
+      "prep_time": 6,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Gujarat Specialty"
+      ],
+      "image_url": "/images/food/locho.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Amul Butter",
+          "price": 25
+        },
+        {
+          "name": "Extra Cheese Topping",
+          "price": 35
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Nylon Khaman Dhokla (Plate of 4)",
+      "desc": "Spongy, juicy, melt-in-mouth steamed savory cakes tempered with mustard seeds, sesame, curry leaves, and fresh green chillies.",
+      "price": 60,
+      "category": "Gujarati Special",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Gujarat",
+      "rating": 4.8,
+      "reviews_count": 510,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Gujarat Specialty",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/dhokla.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Kadi Chutney",
+          "price": 10
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Methi Thepla with Mango Chunda (3 Pcs)",
+      "desc": "Thin, fragrant whole-wheat flatbreads kneaded with fresh fenugreek leaves, curd and aromatic spices. Served with sweet mango chunda.",
+      "price": 80,
+      "category": "Gujarati Special",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Gujarat",
+      "rating": 4.7,
+      "reviews_count": 280,
+      "prep_time": 5,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Gujarat Specialty"
+      ],
+      "image_url": "/images/food/thepla.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Thepla (1 Pc)",
+          "price": 25
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Crispy Vegetable Handvo with Sesame Tadka",
+      "desc": "Traditional Gujarati baked savory lentil and vegetable cake featuring bottle gourd, tempered with sesame and mustard seeds.",
+      "price": 95,
+      "category": "Gujarati Special",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Gujarat",
+      "rating": 4.6,
+      "reviews_count": 190,
+      "prep_time": 7,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Gujarat Specialty"
+      ],
+      "image_url": "/images/food/handvo.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Green Chutney",
+          "price": 10
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Khandvi Rolls with Mustard & Fresh Coconut",
+      "desc": "Silky, delicate tightly rolled gram flour spirals tempered with mustard seeds and garnished with grated coconut and coriander.",
+      "price": 75,
+      "category": "Gujarati Special",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Gujarat",
+      "rating": 4.8,
+      "reviews_count": 230,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Gujarat Specialty"
+      ],
+      "image_url": "/images/food/khandvi.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 22,
+      "name": "Sev Tameta Nu Shaak with 3 Phulkas",
+      "desc": "Sweet and tangy tomato curry topped with crisp ratlami sev, served alongside 3 piping hot ghee-brushed phulkas.",
+      "price": 110,
+      "category": "Gujarati Special",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Gujarat",
+      "rating": 4.7,
+      "reviews_count": 210,
+      "prep_time": 8,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Gujarat Specialty"
+      ],
+      "image_url": "/images/food/sev-tameta.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Phulka (1 pc)",
+          "price": 15
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Homestyle Gujarati Dal Dhokli Bowl",
+      "desc": "Wholesome sweet, spicy, and tangy toor dal simmering with soft spiced wheat flour dumplings, peanuts, and ghee.",
+      "price": 105,
+      "category": "Gujarati Special",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Gujarat",
+      "rating": 4.8,
+      "reviews_count": 260,
+      "prep_time": 8,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Gujarat Specialty"
+      ],
+      "image_url": "/images/food/dal-dhokli.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Ghee Spoon",
+          "price": 15
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Crispy Butter Masala Dosa with Sambhar & 2 Chutneys",
+      "desc": "Golden paper-thin fermented rice crepe roasted in Amul butter, filled with spiced potato masala. Served with hot lentil sambhar and chutneys.",
+      "price": 90,
+      "category": "South Indian",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "South Indian",
+      "rating": 4.9,
+      "reviews_count": 740,
+      "prep_time": 7,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "South Indian"
+      ],
+      "image_url": "/images/food/dosa.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Coconut Chutney Cup",
+          "price": 15
+        },
+        {
+          "name": "Add Grated Cheese",
+          "price": 25
+        },
+        {
+          "name": "Make it Ghee Roast",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Jain Butter Dosa (Raw Banana Masala)",
+      "desc": "Crispy fermented crepe filled with Jain-compliant spiced raw banana and turmeric filling, roasted in pure butter.",
+      "price": 95,
+      "category": "South Indian",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "South Indian",
+      "rating": 4.7,
+      "reviews_count": 310,
+      "prep_time": 7,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "South Indian"
+      ],
+      "image_url": "/images/food/dosa.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Sambar Cup",
+          "price": 15
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Steamed Button Idli Sambhar Dip (12 Pcs)",
+      "desc": "Pillow-soft mini steamed button idlis soaked in a steaming bowl of aromatic vegetable sambhar with fresh coconut chutney.",
+      "price": 65,
+      "category": "South Indian",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "South Indian",
+      "rating": 4.8,
+      "reviews_count": 420,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "South Indian",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/idli.jpg",
+      "custom_options": [
+        {
+          "name": "Gunpowder Ghee Podi Toss",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Crispy Medu Vada (2 Pcs) with Sambhar",
+      "desc": "Golden brown, crunchy on the outside, fluffy inside lentil doughnuts spiced with black pepper and cumin. Served with hot sambar.",
+      "price": 70,
+      "category": "South Indian",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "South Indian",
+      "rating": 4.8,
+      "reviews_count": 360,
+      "prep_time": 5,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "South Indian"
+      ],
+      "image_url": "/images/food/medu-vada.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 28,
+      "name": "Onion Tomato Chilli Uttapam",
+      "desc": "Thick savory fermented pancake topped with caramelized red onions, juicy diced tomatoes, green chillies, and fresh coriander.",
+      "price": 85,
+      "category": "South Indian",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "South Indian",
+      "rating": 4.7,
+      "reviews_count": 290,
+      "prep_time": 7,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "South Indian"
+      ],
+      "image_url": "/images/food/uttapam.jpg",
+      "custom_options": [
+        {
+          "name": "Add Cheese Topping",
+          "price": 25
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Authentic Degree Filter Coffee (Hot Dabarah)",
+      "desc": "Freshly brewed dark roasted chicory-coffee decoction frothed with boiling whole milk, served in traditional stainless steel tumbler.",
+      "price": 30,
+      "category": "South Indian",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "South Indian",
+      "rating": 4.9,
+      "reviews_count": 820,
+      "prep_time": 3,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/filter-coffee.jpg",
+      "custom_options": [
+        {
+          "name": "Strong Decoction",
+          "price": 0
+        },
+        {
+          "name": "Less Sugar",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Delhi Chole Bhature (2 Giant Puffed Bhatures)",
+      "desc": "Giant golden puffed bhatures served with dark, aromatic Amritsari chickpea chole, pickled ginger juliennes, and mint chutney.",
+      "price": 140,
+      "category": "North Indian & Meals",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "North India",
+      "rating": 4.9,
+      "reviews_count": 650,
+      "prep_time": 9,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "High Protein"
+      ],
+      "image_url": "/images/food/chole-bhature.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Bhatura (1 pc)",
+          "price": 40
+        },
+        {
+          "name": "Extra Chole Bowl",
+          "price": 45
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Paneer Butter Masala Combo with 2 Butter Naans",
+      "desc": "Succulent cottage cheese cubes simmered in a velvety, rich tomato, butter, and cashew gravy. Served with 2 hot butter naans.",
+      "price": 180,
+      "category": "North Indian & Meals",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "North India",
+      "rating": 4.8,
+      "reviews_count": 520,
+      "prep_time": 10,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "High Protein"
+      ],
+      "image_url": "/images/food/paneer-butter-masala.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Butter Naan",
+          "price": 35
+        },
+        {
+          "name": "Add Jeera Rice Cup",
+          "price": 40
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Jain Shahi Paneer with 3 Phulkas",
+      "desc": "Rich saffron and cardamom-scented white gravy made with melon seeds and cashew cream, cooked with fresh paneer. 100% Jain.",
+      "price": 170,
+      "category": "North Indian & Meals",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "North India",
+      "rating": 4.7,
+      "reviews_count": 290,
+      "prep_time": 9,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "High Protein"
+      ],
+      "image_url": "/images/food/paneer-butter-masala.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Phulka (1 pc)",
+          "price": 15
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Dal Makhani Slow-Cooked Over Charcoal",
+      "desc": "Whole black urad lentils and kidney beans slow-simmered overnight with butter, cream, and Kashmiri red chillies.",
+      "price": 150,
+      "category": "North Indian & Meals",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "North India",
+      "rating": 4.8,
+      "reviews_count": 370,
+      "prep_time": 8,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/dal-makhani.jpg",
+      "custom_options": [
+        {
+          "name": "Add Steamed Basmati Rice",
+          "price": 40
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Rajma Chawal Deluxe College Bowl",
+      "desc": "North Indian comfort meal: tender Jammu rajma beans cooked in thick tomato gravy served over fragrant steamed basmati rice with pickle.",
+      "price": 120,
+      "category": "North Indian & Meals",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "North India",
+      "rating": 4.9,
+      "reviews_count": 580,
+      "prep_time": 5,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "High Protein"
+      ],
+      "image_url": "/images/food/rajma-chawal.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Rajma Gravy Cup",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Street Style Veg Hakka Noodles",
+      "desc": "Wok-tossed thin wheat noodles with shredded cabbage, bell peppers, carrots, spring onions, and dark soy garlic sauce.",
+      "price": 110,
+      "category": "Pan-Asian & Chinese",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Pan-Asian",
+      "rating": 4.8,
+      "reviews_count": 590,
+      "prep_time": 7,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/noodles.jpg",
+      "custom_options": [
+        {
+          "name": "Add Extra Schezwan Spicy Dip",
+          "price": 15
+        },
+        {
+          "name": "Add Paneer Cubes",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Triple Schezwan Fried Rice with Gravy Bowl",
+      "desc": "Spicy Schezwan wok-tossed rice and noodles mixed together, served with a separate bowl of sizzling Manchurian gravy.",
+      "price": 150,
+      "category": "Pan-Asian & Chinese",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Pan-Asian",
+      "rating": 4.9,
+      "reviews_count": 480,
+      "prep_time": 8,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Spicy / Tikhat"
+      ],
+      "image_url": "/images/food/fried-rice.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Fried Noodles Crunch",
+          "price": 15
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Crispy Chilli Paneer Dry (8 Pcs)",
+      "desc": "Batter-crisped cottage cheese cubes tossed in spicy chilli garlic sauce with crunchy green capsicum and diced onions.",
+      "price": 140,
+      "category": "Pan-Asian & Chinese",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Pan-Asian",
+      "rating": 4.8,
+      "reviews_count": 410,
+      "prep_time": 7,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Spicy / Tikhat",
+        "High Protein"
+      ],
+      "image_url": "/images/food/chilli-paneer.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 38,
+      "name": "Veg Manchurian Dry Balls (8 Pcs)",
+      "desc": "Crispy fried vegetable dumplings tossed in an aromatic Indo-Chinese sauce flavored with ginger, garlic, and coriander.",
+      "price": 120,
+      "category": "Pan-Asian & Chinese",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Pan-Asian",
+      "rating": 4.7,
+      "reviews_count": 360,
+      "prep_time": 7,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/manchurian.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 39,
+      "name": "Golden Fried Spring Rolls with Sweet Chilli Dip (6 Pcs)",
+      "desc": "Crispy golden wrappers filled with finely seasoned julienne vegetables and glass noodles. Served with sweet chilli dip.",
+      "price": 110,
+      "category": "Pan-Asian & Chinese",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Pan-Asian",
+      "rating": 4.7,
+      "reviews_count": 290,
+      "prep_time": 6,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/spring-rolls.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 40,
+      "name": "Steamed Vegetable Momos with Fiery Red Sauce (6 Pcs)",
+      "desc": "Thin translucent handmade steamed dumplings packed with finely minced cabbage, carrots, and paneer. Served with fiery red chilli chutney.",
+      "price": 90,
+      "category": "Pan-Asian & Chinese",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Pan-Asian",
+      "rating": 4.9,
+      "reviews_count": 670,
+      "prep_time": 6,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Spicy / Tikhat"
+      ],
+      "image_url": "/images/food/momos.jpg",
+      "custom_options": [
+        {
+          "name": "Add Mayonnaise Dip",
+          "price": 15
+        },
+        {
+          "name": "Make it Fried Momos",
+          "price": 15
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Veggie California Sushi Roll (8 Pcs)",
+      "desc": "Premium short-grain sushi rice rolled with crisp cucumber, creamy avocado, carrots, and toasted sesame seeds with soy and wasabi.",
+      "price": 220,
+      "category": "Pan-Asian & Chinese",
+      "canteen_ids": [
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Pan-Asian",
+      "rating": 4.9,
+      "reviews_count": 240,
+      "prep_time": 9,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/sushi.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Pickled Ginger",
+          "price": 15
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Edamame Sea Salt Steamed Pods",
+      "desc": "Tender whole green young soybean pods steamed and seasoned with coarse flaked sea salt. Nutritious and healthy.",
+      "price": 150,
+      "category": "Pan-Asian & Chinese",
+      "canteen_ids": [
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Pan-Asian",
+      "rating": 4.7,
+      "reviews_count": 140,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "High Protein",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/edamame.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 43,
+      "name": "Classic Italian Margherita Pizza with Fresh Basil",
+      "desc": "Thin hand-stretched crust baked with San Marzano tomato reduction, melted mozzarella cheese blend, and fresh basil leaves.",
+      "price": 180,
+      "category": "Fast Food, Pizza & Pasta",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Italian",
+      "rating": 4.8,
+      "reviews_count": 460,
+      "prep_time": 11,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/margherita-pizza.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Mozzarella Cheese Burst",
+          "price": 40
+        },
+        {
+          "name": "Add Jalapeno Slices",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Farmhouse Veggie Exotica Pizza (Loaded)",
+      "desc": "Loaded pizza baked with bell peppers, sweet corn, sliced button mushrooms, black olives, onions, and rich stringy mozzarella.",
+      "price": 220,
+      "category": "Fast Food, Pizza & Pasta",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Italian",
+      "rating": 4.8,
+      "reviews_count": 390,
+      "prep_time": 12,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/farmhouse-pizza.jpg",
+      "custom_options": [
+        {
+          "name": "Cheese Stuffed Crust",
+          "price": 50
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Penne Arrabiata Spicy Red Tomato Sauce",
+      "desc": "Al dente penne pasta tossed in fiery Italian tomato sauce infused with garlic, chilli flakes, oregano, and grated parmesan.",
+      "price": 150,
+      "category": "Fast Food, Pizza & Pasta",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Italian",
+      "rating": 4.7,
+      "reviews_count": 270,
+      "prep_time": 10,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Spicy / Tikhat"
+      ],
+      "image_url": "/images/food/arrabiata-pasta.jpg",
+      "custom_options": [
+        {
+          "name": "Add Garlic Bread Slice (2 pcs)",
+          "price": 35
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Creamy White Alfredo Penne Pasta",
+      "desc": "Penne pasta enveloped in a rich, velvety white cream sauce made with butter, parmesan, sautéed mushrooms, and cracked black pepper.",
+      "price": 165,
+      "category": "Fast Food, Pizza & Pasta",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Italian",
+      "rating": 4.8,
+      "reviews_count": 310,
+      "prep_time": 10,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/alfredo-pasta.jpg",
+      "custom_options": [
+        {
+          "name": "Add Garlic Bread Slice (2 pcs)",
+          "price": 35
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Crispy Peri Peri French Fries",
+      "desc": "Crispy, golden skin-on potato fries tossed in fiery African peri-peri spice dust. Served hot with cheesy dip.",
+      "price": 80,
+      "category": "Fast Food, Pizza & Pasta",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Continental",
+      "rating": 4.9,
+      "reviews_count": 610,
+      "prep_time": 5,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Spicy / Tikhat",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/french-fries.jpg",
+      "custom_options": [
+        {
+          "name": "Melted Cheese Sauce Drizzle",
+          "price": 25
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Cheese Loaded Nachos with Jalapeños & Salsa",
+      "desc": "Crisp stone-ground corn tortilla chips drenched in warm melted cheddar cheese sauce, pickled jalapeños, and fresh salsa.",
+      "price": 110,
+      "category": "Fast Food, Pizza & Pasta",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Mexican",
+      "rating": 4.7,
+      "reviews_count": 340,
+      "prep_time": 5,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/nachos.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Cheese Dip Cup",
+          "price": 25
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Cutting Adrak Elaichi Chai (Kulhad)",
+      "desc": "Steaming aromatic milk tea brewed with crushed ginger roots, fragrant green cardamom, and Assam tea leaves in earthen kulhad.",
+      "price": 20,
+      "category": "Beverages & Chai",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.9,
+      "reviews_count": 980,
+      "prep_time": 3,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/chai.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Strong / Kadak",
+          "price": 0
+        },
+        {
+          "name": "Sugar Free",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Iced Cold Coffee with Vanilla Ice Cream",
+      "desc": "Chilled blended coffee made with rich milk and chocolate drizzle, topped with a luscious scoop of creamy vanilla ice cream.",
+      "price": 70,
+      "category": "Beverages & Chai",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Continental",
+      "rating": 4.9,
+      "reviews_count": 810,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/cold-coffee.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Ice Cream Scoop",
+          "price": 25
+        },
+        {
+          "name": "Add Chocolate Chips",
+          "price": 15
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Thick Chocolate Oreo Mudshake",
+      "desc": "Decadent thick milkshake blended with crunchy Oreo cookies, chocolate ganache, and topped with cookie crumble.",
+      "price": 90,
+      "category": "Beverages & Chai",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Continental",
+      "rating": 4.8,
+      "reviews_count": 460,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/oreo-shake.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 52,
+      "name": "Spiced Masala Chaas (Roasted Cumin & Mint Buttermilk)",
+      "desc": "Refreshing, cooling light spiced yogurt drink tempered with roasted cumin powder, black salt, and fresh garden mint.",
+      "price": 25,
+      "category": "Beverages & Chai",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Gujarat",
+      "rating": 4.8,
+      "reviews_count": 530,
+      "prep_time": 2,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/masala-chaas.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 53,
+      "name": "Patiala Sweet Lassi with Malai & Pistachios",
+      "desc": "Creamy, chilled, thick churned yogurt drink served in a tall glass, topped with a thick layer of clotted malai and crushed nuts.",
+      "price": 60,
+      "category": "Beverages & Chai",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "North India",
+      "rating": 4.9,
+      "reviews_count": 390,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/sweet-lassi.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 54,
+      "name": "Royal Kesar Badam Thandai Shake",
+      "desc": "Traditional cooling drink enriched with saffron threads, crushed almonds, fennel seeds, and rose water.",
+      "price": 80,
+      "category": "Beverages & Chai",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "North India",
+      "rating": 4.8,
+      "reviews_count": 220,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/thandai.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 55,
+      "name": "Fresh Crushed Sugarcane Juice with Ginger & Lemon",
+      "desc": "Hygienically cold-pressed natural sugarcane juice with fresh lemon and ginger extract over crushed ice. Naturally energizing.",
+      "price": 40,
+      "category": "Fresh Juices & Coolers",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.9,
+      "reviews_count": 730,
+      "prep_time": 3,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/sugarcane-juice.jpg",
+      "custom_options": [
+        {
+          "name": "Without Ice",
+          "price": 0
+        },
+        {
+          "name": "Extra Lemon Squeeze",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Fresh Watermelon Mint Cooler",
+      "desc": "100% pure watermelon juice freshly squeezed to order with fresh crushed garden mint leaves and black salt. No added sugar.",
+      "price": 60,
+      "category": "Fresh Juices & Coolers",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.8,
+      "reviews_count": 410,
+      "prep_time": 3,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/watermelon-juice.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 57,
+      "name": "Pure Pomegranate (Anar) Fresh Juice",
+      "desc": "Rich ruby red fresh pomegranate juice squeezed fresh without water dilution. Antioxidant powerhouse.",
+      "price": 90,
+      "category": "Fresh Juices & Coolers",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.9,
+      "reviews_count": 320,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/pomegranate-juice.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 58,
+      "name": "Alphonso Mango Thick Shake",
+      "desc": "Rich, velvety summer special shake made with ripe Ratnagiri Alphonso mango pulp and chilled creamy milk.",
+      "price": 95,
+      "category": "Fresh Juices & Coolers",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.9,
+      "reviews_count": 850,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/mango-shake.jpg",
+      "custom_options": [
+        {
+          "name": "Add Mango Chunks on Top",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Fresh Mosambi (Sweet Lime) Juice",
+      "desc": "Freshly cold-pressed sweet lime citrus juice with a pinch of black salt. Refreshing and packed with Vitamin C.",
+      "price": 60,
+      "category": "Fresh Juices & Coolers",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.7,
+      "reviews_count": 380,
+      "prep_time": 3,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/mosambi-juice.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 60,
+      "name": "Tropical Pineapple Mint Juice",
+      "desc": "Zesty freshly pressed golden pineapple juice accented with crushed fresh mint sprigs. Tangy and refreshing.",
+      "price": 65,
+      "category": "Fresh Juices & Coolers",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.8,
+      "reviews_count": 240,
+      "prep_time": 3,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/pineapple-juice.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 61,
+      "name": "Green Detox Cleanser Juice (Cucumber, Mint, Spinach)",
+      "desc": "Rejuvenating wellness juice pressed with fresh cucumber, spinach, green apple, lemon, and mint leaves.",
+      "price": 80,
+      "category": "Fresh Juices & Coolers",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Healthy",
+      "rating": 4.6,
+      "reviews_count": 170,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/detox-juice.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 75,
+      "name": "Fresh Mahabaleshwar Strawberry Juice",
+      "desc": "Pure cold-pressed ruby red juice from freshly plucked Mahabaleshwar strawberries with a splash of fresh lime and mint sprig. 100% real fruit, no artificial syrup.",
+      "price": 85,
+      "category": "Fresh Juices & Coolers",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.9,
+      "reviews_count": 530,
+      "prep_time": 4,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/strawberry-juice.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Fresh Strawberry Slices",
+          "price": 20
+        },
+        {
+          "name": "Add Crushed Mint & Black Salt",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Sizzling Chocolate Brownie with Hot Fudge & Vanilla Ice Cream",
+      "desc": "Warm dark chocolate walnut brownie on cast-iron sizzler plate, crowned with vanilla ice cream and bubbling hot chocolate sauce.",
+      "price": 130,
+      "category": "Desserts & Ice Cream",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Continental",
+      "rating": 4.9,
+      "reviews_count": 820,
+      "prep_time": 6,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/brownie.jpg",
+      "custom_options": [
+        {
+          "name": "Extra Hot Fudge Sauce",
+          "price": 20
+        },
+        {
+          "name": "Double Ice Cream Scoop",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Death By Chocolate (DBC) Sundae Jar",
+      "desc": "Layered tall mason jar featuring chocolate sponge cake, double scoops of chocolate ice cream, roasted nuts, and chocolate fudge.",
+      "price": 140,
+      "category": "Desserts & Ice Cream",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Continental",
+      "rating": 4.9,
+      "reviews_count": 490,
+      "prep_time": 5,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/sundae.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 64,
+      "name": "Nutella Belgian Waffle with Vanilla Dip",
+      "desc": "Freshly baked crisp Belgian waffle with deep pockets smothered in warm Nutella hazelnut spread, dusted with powdered sugar.",
+      "price": 120,
+      "category": "Desserts & Ice Cream",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Continental",
+      "rating": 4.8,
+      "reviews_count": 530,
+      "prep_time": 7,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/waffle.jpg",
+      "custom_options": [
+        {
+          "name": "Add Vanilla Ice Cream Scoop",
+          "price": 25
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Warm Gulab Jamun with Rabdi (2 Pcs)",
+      "desc": "Soft, golden brown khoya dumplings soaked in fragrant cardamom rose syrup, served warm over chilled creamy thick rabdi.",
+      "price": 70,
+      "category": "Desserts & Ice Cream",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "North India",
+      "rating": 4.9,
+      "reviews_count": 410,
+      "prep_time": 3,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/gulab-jamun.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 66,
+      "name": "Kesar Pista Matka Kulfi (Clay Pot)",
+      "desc": "Authentic slow-reduced milk kulfi infused with Kashmiri saffron and slivered pistachios, frozen traditionally in earthen pot.",
+      "price": 65,
+      "category": "Desserts & Ice Cream",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "North India",
+      "rating": 4.8,
+      "reviews_count": 360,
+      "prep_time": 2,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/kulfi.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 67,
+      "name": "Delicate Kesar Rasmalai (2 Pcs)",
+      "desc": "Spongy, pillowy cottage cheese discs steeped in chilled sweetened saffron-cardamom milk, garnished with slivered almonds.",
+      "price": 80,
+      "category": "Desserts & Ice Cream",
+      "canteen_ids": [
+        "ground",
+        "6th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "North India",
+      "rating": 4.9,
+      "reviews_count": 420,
+      "prep_time": 2,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/rasmalai.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 68,
+      "name": "Tender Coconut Ice Cream Scoop",
+      "desc": "Natural's style artisanal ice cream churned with pure milk, cream, and tender malai bits from fresh green coconuts.",
+      "price": 65,
+      "category": "Desserts & Ice Cream",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.9,
+      "reviews_count": 510,
+      "prep_time": 2,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/coconut-ice-cream.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 69,
+      "name": "Warm Molten Choco Lava Cake",
+      "desc": "Freshly baked individual chocolate cake with a warm, gooey molten chocolate ganache center that flows out at the first spoon.",
+      "price": 85,
+      "category": "Desserts & Ice Cream",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Continental",
+      "rating": 4.8,
+      "reviews_count": 370,
+      "prep_time": 5,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg"
+      ],
+      "image_url": "/images/food/choco-lava.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 70,
+      "name": "Doritos Nacho Cheese with Jalapeño Dip",
+      "desc": "Crunchy triangular corn tortilla chips with intense nacho cheese flavor. Served with sealed cheese jalapeño dipping tub.",
+      "price": 50,
+      "category": "Grab & Go Snacks",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Packaged",
+      "rating": 4.7,
+      "reviews_count": 320,
+      "prep_time": 1,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/doritos.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 71,
+      "name": "Balaji Wafers Cream & Onion Pack",
+      "desc": "Crispy ridged golden potato wafers seasoned with tangy sour cream and herb onion seasoning.",
+      "price": 25,
+      "category": "Grab & Go Snacks",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Packaged",
+      "rating": 4.6,
+      "reviews_count": 410,
+      "prep_time": 1,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/potato-chips.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 72,
+      "name": "Cadbury Dairy Milk Silk Roasted Almond Bar",
+      "desc": "Rich, smooth melt-in-mouth milk chocolate packed with whole crunchy roasted almonds (58g pack).",
+      "price": 90,
+      "category": "Grab & Go Snacks",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Packaged",
+      "rating": 4.9,
+      "reviews_count": 670,
+      "prep_time": 1,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/chocolate-bar.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 73,
+      "name": "Ferrero Rocher Hazelnut Pralines (Pack of 3)",
+      "desc": "Crispy wafer balls filled with whole crunchy hazelnut and rich chocolate cream, coated in milk chocolate and chopped hazelnuts.",
+      "price": 120,
+      "category": "Grab & Go Snacks",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Packaged",
+      "rating": 4.9,
+      "reviews_count": 310,
+      "prep_time": 1,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/ferrero.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 74,
+      "name": "RiteBite Max Protein Choco Slim Bar (20g Protein)",
+      "desc": "Healthy fitness energy bar packed with 20g whey & soy protein, 21 essential vitamins, and zero added sugar.",
+      "price": 110,
+      "category": "Grab & Go Snacks",
+      "canteen_ids": [
+        "ground",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Fitness",
+      "rating": 4.7,
+      "reviews_count": 280,
+      "prep_time": 1,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "100% Pure Veg",
+        "High Protein",
+        "Quick Bite (<5m)"
+      ],
+      "image_url": "/images/food/protein-bar.jpg",
+      "custom_options": []
+    },
+    {
+      "id": 76,
+      "name": "Classic Pav Bhaji + Mango Lassi Combo",
+      "desc": "Signature Amul Butter Pav Bhaji served with 2 extra butter pavs and a tall chilled glass of golden Mango Lassi. (Save ?35!)",
+      "price": 185,
+      "category": "Combos & Value Meals",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Maharashtra",
+      "rating": 4.9,
+      "reviews_count": 320,
+      "prep_time": 10,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Chef Special",
+        "Popular Combo",
+        "Value Deal"
+      ],
+      "image_url": "/images/food/pav-bhaji.jpg"
+    },
+    {
+      "id": 77,
+      "name": "Jain Deluxe Thali + Roasted Jeera Chaas Combo",
+      "desc": "Authentic 100% Jain Thali with 3 Rotlis, Paneer Shak, Dal, Rice, Salad and chilled roasted jeera buttermilk chaas.",
+      "price": 199,
+      "category": "Combos & Value Meals",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "Gujarat",
+      "rating": 4.8,
+      "reviews_count": 245,
+      "prep_time": 12,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "Pure Veg",
+        "Value Deal"
+      ],
+      "image_url": "/images/food/gujarati-thali.jpg"
+    },
+    {
+      "id": 78,
+      "name": "Delhi Chole Bhature + Sweet Punjabi Lassi Combo",
+      "desc": "2 crispy golden Bhature with rich Amritsari Pindi Chole, onion-chilli relish, and thick sweet creamy Malai Lassi.",
+      "price": 175,
+      "category": "Combos & Value Meals",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "North Indian",
+      "rating": 4.9,
+      "reviews_count": 410,
+      "prep_time": 10,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "North Indian",
+        "Popular Combo",
+        "Value Deal"
+      ],
+      "image_url": "/images/food/chole-bhature.jpg"
+    },
+    {
+      "id": 79,
+      "name": "South Indian Tiffin Combo (Idli + Vada + Filter Coffee)",
+      "desc": "2 fluffy steamed Idlis, 1 crispy Medu Vada with hot Sambhar, fresh coconut chutney & authentic tumbler Filter Coffee.",
+      "price": 135,
+      "category": "Combos & Value Meals",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": true,
+      "state_cuisine": "South Indian",
+      "rating": 4.8,
+      "reviews_count": 190,
+      "prep_time": 8,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Jain Available",
+        "South Indian",
+        "Best Breakfast"
+      ],
+      "image_url": "/images/food/idli.jpg"
+    },
+    {
+      "id": 80,
+      "name": "Campus Burger + Peri Peri Fries + Cold Coffee Meal",
+      "desc": "Crispy Veg Patty Burger loaded with cheese, hot Peri Peri French Fries, and frothy chilled Nescafe Cold Coffee.",
+      "price": 195,
+      "category": "Combos & Value Meals",
+      "canteen_ids": [
+        "ground",
+        "6th_floor",
+        "8th_floor"
+      ],
+      "is_jain": false,
+      "state_cuisine": "Fast Food",
+      "rating": 4.9,
+      "reviews_count": 530,
+      "prep_time": 10,
+      "stock_status": "in_stock",
+      "dietary_badges": [
+        "Fast Food",
+        "Youth Favorite",
+        "Value Deal"
+      ],
+      "image_url": "/images/food/burger.jpg"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1789027039412,
+      "order_code": "SVKM-8158",
+      "status": "Preparing",
+      "estimated_mins": 12,
+      "estimated_ready_at": "2026-09-10T08:09:19.412Z",
+      "created_at": "2026-09-10T07:57:19.412Z",
+      "user_id": 2,
+      "user_name": "Aarav Shah",
+      "user_email": "student@svkm.edu",
+      "user_role": "student",
+      "canteen_id": "ground",
+      "canteen_name": "Ground Floor - Main Campus Plaza",
+      "items": [
+        {
+          "id": 12,
+          "name": "Golden Pani Puri (8 Pcs with Pudina Pani)",
+          "price": 50,
+          "qty": 1,
+          "unit_price": 50,
+          "selected_customizations": []
+        }
+      ],
+      "subtotal": 50,
+      "discount": 0,
+      "total": 50,
+      "payment_method": "Razorpay",
+      "payment_status": "PAID",
+      "order_timing": "now",
+      "scheduled_for": "Immediate",
+      "fulfillment_type": "pickup",
+      "delivery_location": "Self-Pickup at Counter",
+      "pickup_counter": "Counter 1",
+      "pickup_otp": "1562",
+      "coupon_code": null,
+      "coins_redeemed": 0,
+      "coin_discount": 0,
+      "coins_earned": 2
+    },
+    {
+      "id": 1789026328371,
+      "order_code": "SVKM-2484",
+      "status": "Preparing",
+      "estimated_mins": 12,
+      "estimated_ready_at": "2026-09-10T07:57:28.371Z",
+      "created_at": "2026-09-10T07:45:28.371Z",
+      "user_id": 2,
+      "user_name": "Aarav Shah",
+      "user_email": "student@svkm.edu",
+      "user_role": "student",
+      "canteen_id": "ground",
+      "canteen_name": "Ground Floor - Main Campus Plaza",
+      "items": [
+        {
+          "id": 49,
+          "name": "Cutting Adrak Elaichi Chai (Kulhad)",
+          "price": 20,
+          "qty": 2,
+          "unit_price": 20,
+          "selected_customizations": []
+        },
+        {
+          "id": 12,
+          "name": "Golden Pani Puri (8 Pcs with Pudina Pani)",
+          "price": 50,
+          "qty": 1,
+          "unit_price": 50,
+          "selected_customizations": []
+        }
+      ],
+      "subtotal": 90,
+      "discount": 0,
+      "total": 90,
+      "payment_method": "Razorpay",
+      "payment_status": "PAID",
+      "order_timing": "now",
+      "scheduled_for": "Immediate",
+      "fulfillment_type": "pickup",
+      "delivery_location": "Self-Pickup at Counter",
+      "pickup_counter": "Counter 1",
+      "pickup_otp": "5930",
+      "coupon_code": null,
+      "coins_redeemed": 0,
+      "coin_discount": 0,
+      "coins_earned": 4
+    },
+    {
+      "id": 1789026195219,
+      "order_code": "SVKM-8085",
+      "status": "Completed",
+      "estimated_mins": 12,
+      "estimated_ready_at": "2026-09-10T07:55:15.219Z",
+      "created_at": "2026-09-10T07:43:15.219Z",
+      "user_id": 2,
+      "user_name": "Aarav Shah",
+      "user_email": "student@svkm.edu",
+      "user_role": "student",
+      "canteen_id": "8th_floor",
+      "canteen_name": "8th Floor Sky Lounge",
+      "items": [
+        {
+          "id": 45,
+          "name": "Crispy Veg Dim Sums",
+          "price": 140,
+          "qty": 1,
+          "unit_price": 140,
+          "selected_customizations": []
+        }
+      ],
+      "subtotal": 140,
+      "discount": 0,
+      "total": 140,
+      "payment_method": "Razorpay UPI",
+      "payment_status": "PAID",
+      "order_timing": "now",
+      "scheduled_for": "Immediate",
+      "fulfillment_type": "pickup",
+      "delivery_location": "Self-Pickup at Counter",
+      "pickup_counter": "Counter 1",
+      "pickup_otp": "4487",
+      "coupon_code": null,
+      "coins_redeemed": 0,
+      "coin_discount": 0,
+      "coins_earned": 7,
+      "completed_at": "2026-09-10T07:43:26.808Z"
+    },
+    {
+      "id": 1789023260945,
+      "order_code": "SVKM-9966",
+      "status": "Completed",
+      "estimated_mins": 12,
+      "estimated_ready_at": "2026-09-10T07:06:20.945Z",
+      "created_at": "2026-09-10T06:54:20.945Z",
+      "user_id": 2,
+      "user_name": "Aarav Shah",
+      "user_email": "student@svkm.edu",
+      "user_role": "student",
+      "canteen_id": "ground",
+      "canteen_name": "Ground Floor Canteen",
+      "items": [
+        {
+          "id": 76,
+          "name": "Classic Pav Bhaji + Mango Lassi Combo",
+          "price": 185,
+          "qty": 2,
+          "unit_price": 185
+        }
+      ],
+      "subtotal": 370,
+      "discount": 50,
+      "total": 320,
+      "payment_method": "Razorpay UPI",
+      "payment_status": "PAID",
+      "order_timing": "now",
+      "scheduled_for": "Immediate",
+      "fulfillment_type": "pickup",
+      "delivery_location": "Self-Pickup at Counter",
+      "pickup_counter": "Counter 1",
+      "pickup_otp": "4449",
+      "coupon_code": "GROUP50",
+      "coins_redeemed": 10,
+      "coin_discount": 0,
+      "coins_earned": 16,
+      "completed_at": "2026-09-10T07:57:51.909Z"
+    },
+    {
+      "id": 1789021894765,
+      "order_code": "SVKM-9537",
+      "status": "Completed",
+      "estimated_mins": 12,
+      "estimated_ready_at": "2026-09-10T06:43:34.765Z",
+      "created_at": "2026-09-10T06:31:34.765Z",
+      "user_id": 2,
+      "user_name": "Aarav Shah",
+      "user_email": "student@svkm.edu",
+      "user_role": "student",
+      "canteen_id": "ground",
+      "canteen_name": "Ground Floor - Main Campus Plaza",
+      "items": [
+        {
+          "id": 62,
+          "name": "Sizzling Chocolate Brownie with Hot Fudge & Vanilla Ice Cream",
+          "price": 130,
+          "qty": 1,
+          "unit_price": 130,
+          "selected_customizations": []
+        },
+        {
+          "id": 24,
+          "name": "Crispy Butter Masala Dosa with Sambhar & 2 Chutneys",
+          "price": 90,
+          "qty": 1,
+          "unit_price": 90,
+          "selected_customizations": []
+        }
+      ],
+      "subtotal": 220,
+      "discount": 0,
+      "total": 220,
+      "payment_method": "Razorpay",
+      "payment_status": "PAID",
+      "order_timing": "now",
+      "scheduled_for": "Immediate",
+      "fulfillment_type": "pickup",
+      "delivery_location": "Self-Pickup at Counter",
+      "pickup_counter": "Counter 1",
+      "pickup_otp": "4903",
+      "completed_at": "2026-09-10T06:32:33.514Z"
+    },
+    {
+      "id": 1789020605780,
+      "order_code": "SVKM-7919",
+      "status": "Completed",
+      "estimated_mins": 12,
+      "estimated_ready_at": "2026-09-10T06:22:05.780Z",
+      "created_at": "2026-09-10T06:10:05.780Z",
+      "user_id": 2,
+      "user_name": "Aarav Shah",
+      "user_email": "student@svkm.edu",
+      "user_role": "student",
+      "canteen_id": "ground",
+      "canteen_name": "Ground Floor - Main Campus Plaza",
+      "items": [
+        {
+          "id": 12,
+          "name": "Golden Pani Puri (8 Pcs with Pudina Pani)",
+          "price": 50,
+          "qty": 3,
+          "unit_price": 50,
+          "selected_customizations": []
+        },
+        {
+          "id": 3,
+          "name": "Mumbai Jumbo Vada Pav",
+          "price": 35,
+          "qty": 1,
+          "unit_price": 35,
+          "selected_customizations": []
+        }
+      ],
+      "subtotal": 185,
+      "discount": 92.5,
+      "total": 92.5,
+      "payment_method": "Google Pay",
+      "payment_status": "PAID",
+      "order_timing": "now",
+      "scheduled_for": "Immediate",
+      "fulfillment_type": "pickup",
+      "delivery_location": "Self-Pickup at Counter",
+      "pickup_counter": "Counter 1",
+      "pickup_otp": "9537",
+      "completed_at": "2026-09-10T06:46:02.748Z"
+    },
+    {
+      "id": 1789018455407,
+      "order_code": "SVKM-9558",
+      "status": "Completed",
+      "estimated_mins": 12,
+      "estimated_ready_at": "2026-09-10T05:46:15.407Z",
+      "created_at": "2026-09-10T05:34:15.407Z",
+      "user_id": 2,
+      "user_name": "Aarav Shah",
+      "user_email": "student@svkm.edu",
+      "user_role": "student",
+      "canteen_id": "ground",
+      "canteen_name": "Ground Floor - Main Campus Plaza",
+      "items": [
+        {
+          "id": 29,
+          "name": "Ghee Podi Roast Dosa (Gunpowder)",
+          "price": 135,
+          "qty": 1,
+          "unit_price": 135,
+          "selected_customizations": []
+        }
+      ],
+      "subtotal": 135,
+      "discount": 0,
+      "total": 135,
+      "payment_method": "Counter QR Scanner",
+      "payment_status": "PAID",
+      "order_timing": "now",
+      "scheduled_for": "Immediate",
+      "fulfillment_type": "pickup",
+      "delivery_location": "Self-Pickup at Counter",
+      "pickup_counter": "Counter 1",
+      "pickup_otp": "1534",
+      "completed_at": "2026-09-10T07:57:42.979Z"
+    },
+    {
+      "id": 1789016347264,
+      "order_code": "SVKM-1153",
+      "status": "Ready",
+      "estimated_mins": 12,
+      "estimated_ready_at": "2026-09-10T05:11:07.264Z",
+      "created_at": "2026-09-10T04:59:07.264Z",
+      "user_id": 3,
+      "user_name": "Prof. R. Mehta (Faculty)",
+      "user_email": "faculty@svkm.edu",
+      "user_role": "teacher",
+      "canteen_id": "6th_floor",
+      "canteen_name": "6th Floor - Faculty & Student Hub",
+      "items": [
+        {
+          "id": 3,
+          "name": "Gujarati Fafda Jalebi Feast",
+          "qty": 1,
+          "price": 110,
+          "selected_customizations": [],
+          "unit_price": 110
+        }
+      ],
+      "subtotal": 110,
+      "discount": 0,
+      "total": 110,
+      "payment_method": "Razorpay UPI",
+      "payment_status": "PAID",
+      "order_timing": "now",
+      "scheduled_for": "Immediate",
+      "fulfillment_type": "delivery",
+      "delivery_location": "Cabin 604, Computer Engineering Dept (Ext: 4210)",
+      "pickup_counter": "Counter 1",
+      "pickup_otp": "9124"
+    },
+    {
+      "id": 1789016347257,
+      "order_code": "SVKM-8466",
+      "status": "Placed",
+      "estimated_mins": 12,
+      "estimated_ready_at": "2026-09-10T05:11:07.257Z",
+      "created_at": "2026-09-10T04:59:07.257Z",
+      "user_id": 2,
+      "user_name": "Aarav Shah (Student)",
+      "user_email": "student@svkm.edu",
+      "user_role": "student",
+      "canteen_id": "ground",
+      "canteen_name": "Ground Floor - Main Campus Plaza",
+      "items": [
+        {
+          "id": 1,
+          "name": "Classic Amul Butter Pav Bhaji",
+          "qty": 1,
+          "price": 90,
+          "selected_customizations": [],
+          "unit_price": 90
+        }
+      ],
+      "subtotal": 90,
+      "discount": 0,
+      "total": 90,
+      "payment_method": "Razorpay UPI",
+      "payment_status": "PAID",
+      "order_timing": "now",
+      "scheduled_for": "Immediate",
+      "fulfillment_type": "pickup",
+      "delivery_location": "Self-Pickup at Counter",
+      "pickup_counter": "Counter 1",
+      "pickup_otp": "4819"
+    },
+    {
+      "id": 1789016313420,
+      "order_code": "SVKM-2170",
+      "status": "Placed",
+      "estimated_mins": 12,
+      "estimated_ready_at": "2026-09-10T05:10:33.420Z",
+      "created_at": "2026-09-10T04:58:33.420Z",
+      "user_id": 3,
+      "user_name": "Prof. R. Mehta (Faculty)",
+      "user_email": "faculty@svkm.edu",
+      "canteen_id": "6th_floor",
+      "canteen_name": "6th Floor - Faculty & Student Hub",
+      "items": [
+        {
+          "id": 3,
+          "name": "Gujarati Fafda Jalebi Feast",
+          "qty": 1,
+          "price": 110,
+          "selected_customizations": [],
+          "unit_price": 110
+        }
+      ],
+      "subtotal": 110,
+      "discount": 0,
+      "total": 110,
+      "payment_method": "Razorpay UPI",
+      "payment_status": "PAID"
+    },
+    {
+      "id": 1789016313413,
+      "order_code": "SVKM-6140",
+      "status": "Placed",
+      "estimated_mins": 12,
+      "estimated_ready_at": "2026-09-10T05:10:33.413Z",
+      "created_at": "2026-09-10T04:58:33.413Z",
+      "user_id": 2,
+      "user_name": "Aarav Shah (Student)",
+      "user_email": "student@svkm.edu",
+      "canteen_id": "ground",
+      "canteen_name": "Ground Floor - Main Campus Plaza",
+      "items": [
+        {
+          "id": 1,
+          "name": "Classic Amul Butter Pav Bhaji",
+          "qty": 1,
+          "price": 90,
+          "selected_customizations": [],
+          "unit_price": 90
+        }
+      ],
+      "subtotal": 90,
+      "discount": 0,
+      "total": 90,
+      "payment_method": "Razorpay UPI",
+      "payment_status": "PAID"
+    },
+    {
+      "id": 1789015128023,
+      "order_code": "SVKM-5454",
+      "status": "Completed",
+      "estimated_mins": 12,
+      "estimated_ready_at": "2026-09-10T04:50:48.023Z",
+      "created_at": "2026-09-10T04:38:48.023Z",
+      "user_id": 2,
+      "user_name": "Aarav Shah",
+      "user_email": "student@svkm.edu",
+      "canteen_id": "6th_floor",
+      "canteen_name": "6th Floor - Faculty & Student Hub",
+      "items": [
+        {
+          "id": 15,
+          "name": "Mumbai Jumbo Vada Pav",
+          "price": 30,
+          "qty": 1,
+          "unit_price": 30,
+          "selected_customizations": []
+        }
+      ],
+      "subtotal": 30,
+      "discount": 0,
+      "total": 30,
+      "payment_method": "Counter QR Scanner",
+      "payment_status": "PAID",
+      "completed_at": "2026-09-10T06:46:31.346Z"
+    },
+    {
+      "id": 1789015062969,
+      "order_code": "SVKM-6829",
+      "status": "Placed",
+      "estimated_mins": 12,
+      "estimated_ready_at": "2026-09-10T04:49:42.969Z",
+      "created_at": "2026-09-10T04:37:42.969Z",
+      "user_id": 2,
+      "user_name": "Aarav Shah",
+      "user_email": "student@svkm.edu",
+      "canteen_id": "6th_floor",
+      "canteen_name": "6th Floor - Faculty & Student Hub",
+      "items": [
+        {
+          "id": 69,
+          "name": "Cutting Adrak Elaichi Chai (Kulhad)",
+          "price": 20,
+          "qty": 1,
+          "unit_price": 20,
+          "selected_customizations": [
+            {
+              "name": "Kadak (Extra Decoction / Strong)",
+              "price": 0
+            },
+            {
+              "name": "Spice: Extra Tikhat 🔥",
+              "price": 0
+            }
+          ]
+        }
+      ],
+      "subtotal": 20,
+      "discount": 0,
+      "total": 20,
+      "payment_method": "Counter QR Scanner",
+      "payment_status": "PAID"
+    },
+    {
+      "id": 1789014035046,
+      "order_code": "SVKM-5102",
+      "status": "Completed",
+      "created_at": "2026-09-10T04:20:35.046Z",
+      "user_id": 2,
+      "user_name": "Aarav Shah",
+      "user_email": "student@svkm.edu",
+      "canteen_id": "ground",
+      "canteen_name": "Ground Floor - Main Campus Plaza",
+      "items": [
+        {
+          "id": 11,
+          "name": "Classic Amul Butter Pav Bhaji",
+          "qty": 2,
+          "price": 130,
+          "selected_customizations": [
+            {
+              "price": 20,
+              "name": "Extra Pav Jodi (2 pcs)"
+            }
+          ],
+          "unit_price": 150
+        }
+      ],
+      "subtotal": 300,
+      "discount": 50,
+      "total": 250,
+      "payment_method": "Razorpay UPI (Google Pay)",
+      "payment_status": "PAID",
+      "completed_at": "2026-09-10T04:35:40.367Z"
+    },
+    {
+      "id": 101,
+      "order_code": "SVKM-9021",
+      "user_id": 2,
+      "user_name": "Aarav Shah",
+      "user_email": "student@svkm.edu",
+      "canteen_id": "ground",
+      "canteen_name": "Ground Floor Canteen",
+      "items": [
+        {
+          "id": 12,
+          "name": "Jain Amul Butter Pav Bhaji",
+          "price": 140,
+          "qty": 1,
+          "selected_customizations": [
+            {
+              "name": "Extra Pav Jodi (2 pcs)",
+              "price": 20
+            }
+          ]
+        },
+        {
+          "id": 49,
+          "name": "Famous Mumbai Mara Mari Juice (Large)",
+          "price": 80,
+          "qty": 1,
+          "selected_customizations": [
+            {
+              "name": "No Added Sugar",
+              "price": 0
+            }
+          ]
+        }
+      ],
+      "subtotal": 240,
+      "discount": 0,
+      "total": 240,
+      "payment_method": "Razorpay UPI (Fast)",
+      "payment_status": "PAID",
+      "status": "Completed",
+      "created_at": "2026-09-10T04:00:43.110Z",
+      "completed_at": "2026-09-10T04:36:05.050Z"
+    },
+    {
+      "id": 102,
+      "order_code": "SVKM-8834",
+      "user_id": 3,
+      "user_name": "Prof. Kothari",
+      "user_email": "teacher@svkm.edu",
+      "canteen_id": "6th_floor",
+      "canteen_name": "6th Floor Faculty Canteen",
+      "items": [
+        {
+          "id": 2,
+          "name": "Nylon Khaman Dhokla (Plate of 4)",
+          "price": 60,
+          "qty": 2,
+          "selected_customizations": []
+        },
+        {
+          "id": 70,
+          "name": "Jain Elaichi Kesar Chai (Kulhad, No Ginger)",
+          "price": 25,
+          "qty": 2,
+          "selected_customizations": []
+        }
+      ],
+      "subtotal": 170,
+      "discount": 20,
+      "total": 150,
+      "payment_method": "Counter UPI QR",
+      "payment_status": "PAID",
+      "status": "Completed",
+      "created_at": "2026-09-10T03:40:43.113Z",
+      "completed_at": "2026-09-10T04:36:10.926Z"
+    }
+  ],
+  "coupons": [
+    {
+      "id": 1,
+      "code": "HAPPYHOUR15",
+      "description": "15% OFF during campus off-peak hours (9:00 - 11:30 AM & 3:00 - 5:00 PM)",
+      "discount_percent": 15,
+      "max_discount": 100,
+      "min_order": 100,
+      "is_active": true,
+      "type": "time_restricted",
+      "off_peak_windows": [
+        {
+          "start": "09:00",
+          "end": "11:30"
+        },
+        {
+          "start": "15:00",
+          "end": "17:00"
+        }
+      ],
+      "redemption_count": 38
+    },
+    {
+      "id": 2,
+      "code": "GROUP50",
+      "description": "Flat ?50 OFF on orders of ?500+ for study groups & teams",
+      "discount_flat": 50,
+      "min_order": 500,
+      "is_active": true,
+      "type": "group",
+      "redemption_count": 20
+    },
+    {
+      "id": 3,
+      "code": "FIRSTBITE",
+      "description": "Flat ?20 OFF on your first cafeteria order at SVKM",
+      "discount_flat": 20,
+      "min_order": 60,
+      "is_active": true,
+      "type": "first_order",
+      "redemption_count": 54
+    },
+    {
+      "id": 4,
+      "code": "SVKM50",
+      "description": "50% OFF up to ?100 on Jain & Gujarati delights",
+      "discount_percent": 50,
+      "max_discount": 100,
+      "min_order": 150,
+      "is_active": true,
+      "type": "regular",
+      "redemption_count": 42
+    },
+    {
+      "id": 1789026328372,
+      "code": "SVKM-FREEBIE-839",
+      "description": "🎉 5th Order Reward! Flat ₹80 OFF on your next order!",
+      "discount_flat": 80,
+      "min_order": 100,
+      "is_active": true,
+      "redemption_count": 0
+    }
+  ]
+}

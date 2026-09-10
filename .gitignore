@@ -1,0 +1,33 @@
+﻿# Root gitignore
+
+# Dependency directories
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.development
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temp
+*.tmp
+*.temp
+
+# Database file - keep sample but not production data
+# backend/src/db/canteen_store.json

@@ -1,3 +1,4 @@
+import API_BASE from '../utils/api.js';
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { 
@@ -52,9 +53,9 @@ export default function AdminDashboardPage() {
     if (!silent) setLoading(true);
     try {
       const [ordersRes, menuRes, statsRes] = await Promise.all([
-        fetch('http://localhost:5000/api/orders'),
-        fetch('http://localhost:5000/api/menu'),
-        fetch('http://localhost:5000/api/admin/stats')
+        fetch(`${API_BASE}/api/orders`),
+        fetch(`${API_BASE}/api/menu`),
+        fetch(`${API_BASE}/api/admin/stats`)
       ]);
 
       if (!ordersRes.ok || !menuRes.ok || !statsRes.ok) {
@@ -90,8 +91,8 @@ export default function AdminDashboardPage() {
   const handleSaveDish = async (payload, editId) => {
     try {
       const url = editId 
-        ? `http://localhost:5000/api/admin/menu/${editId}`
-        : 'http://localhost:5000/api/admin/menu';
+        ? `${API_BASE}/api/admin/menu/${editId}`
+        : `${API_BASE}/api/admin/menu`;
       const method = editId ? 'PUT' : 'POST';
 
       const res = await fetch(url, {
@@ -127,7 +128,7 @@ export default function AdminDashboardPage() {
     setMenu(prev => prev.map(i => i.id === id ? { ...i, stock_status: newStatus } : i));
     
     try {
-      const res = await fetch(`http://localhost:5000/api/admin/menu/${id}/quick-toggle`, {
+      const res = await fetch(`${API_BASE}/api/admin/menu/${id}/quick-toggle`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ field: 'stock_status', value: newStatus })
@@ -163,7 +164,7 @@ export default function AdminDashboardPage() {
     setMenu(prev => prev.map(i => i.id === id ? { ...i, canteen_ids: updatedFloors } : i));
 
     try {
-      const res = await fetch(`http://localhost:5000/api/admin/menu/${id}/quick-toggle`, {
+      const res = await fetch(`${API_BASE}/api/admin/menu/${id}/quick-toggle`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ field: 'floor', value: floorId })
@@ -183,7 +184,7 @@ export default function AdminDashboardPage() {
     setMenu(prev => prev.filter(i => i.id !== id));
 
     try {
-      const res = await fetch(`http://localhost:5000/api/admin/menu/${id}`, {
+      const res = await fetch(`${API_BASE}/api/admin/menu/${id}`, {
         method: 'DELETE'
       });
       if (res.ok) {
@@ -198,7 +199,7 @@ export default function AdminDashboardPage() {
   // 5. Update Order Status (KDS)
   const handleUpdateStatus = async (orderId, newStatus) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/admin/orders/${orderId}/status`, {
+      const res = await fetch(`${API_BASE}/api/admin/orders/${orderId}/status`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status: newStatus })

@@ -1,3 +1,4 @@
+import API_BASE from '../utils/api.js';
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { 
@@ -56,7 +57,7 @@ export default function CartPage({ selectedCanteen, setSelectedCanteen }) {
   const [facultyPhone, setFacultyPhone] = useState('Ext: 4210');
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/coupons')
+    fetch(`${API_BASE}/api/coupons`)
       .then(res => res.json())
       .then(data => setAvailableCoupons(data))
       .catch(err => console.error('Failed to load coupons:', err));
@@ -71,7 +72,7 @@ export default function CartPage({ selectedCanteen, setSelectedCanteen }) {
     }
 
     try {
-      const res = await fetch('http://localhost:5000/api/coupons/apply', {
+      const res = await fetch(`${API_BASE}/api/coupons/apply`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
@@ -152,7 +153,7 @@ export default function CartPage({ selectedCanteen, setSelectedCanteen }) {
           : 'Self-Pickup at Counter'
       };
 
-      const res = await fetch('http://localhost:5000/api/orders', {
+      const res = await fetch(`${API_BASE}/api/orders`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(orderPayload)

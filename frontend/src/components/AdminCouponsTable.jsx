@@ -1,3 +1,4 @@
+import API_BASE from '../utils/api.js';
 ﻿import React, { useState, useEffect } from 'react';
 import { 
   Tag, 
@@ -41,7 +42,7 @@ export default function AdminCouponsTable({ showToast }) {
   const fetchCoupons = async () => {
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:5000/api/admin/coupons');
+      const res = await fetch(`${API_BASE}/api/admin/coupons`);
       const data = await res.json();
       setCoupons(data);
     } catch (err) {
@@ -85,7 +86,7 @@ export default function AdminCouponsTable({ showToast }) {
     setCoupons(prev => prev.map(c => c.id === coupon.id ? { ...c, is_active: nextState } : c));
 
     try {
-      const res = await fetch(`http://localhost:5000/api/admin/coupons/${coupon.id}`, {
+      const res = await fetch(`${API_BASE}/api/admin/coupons/${coupon.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ is_active: nextState })
@@ -122,7 +123,7 @@ export default function AdminCouponsTable({ showToast }) {
     ];
 
     try {
-      const res = await fetch(`http://localhost:5000/api/admin/coupons/${editingWindowCoupon.id}`, {
+      const res = await fetch(`${API_BASE}/api/admin/coupons/${editingWindowCoupon.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ off_peak_windows: updatedWindows })
@@ -155,7 +156,7 @@ export default function AdminCouponsTable({ showToast }) {
     };
 
     try {
-      const res = await fetch('http://localhost:5000/api/admin/coupons', {
+      const res = await fetch(`${API_BASE}/api/admin/coupons`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)

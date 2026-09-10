@@ -1,3 +1,4 @@
+import API_BASE from '../utils/api.js';
 import React, { useState, useEffect, useRef } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { 
@@ -57,14 +58,14 @@ export default function OrdersPage() {
   const fetchOrders = async (silent = false) => {
     if (!silent) setIsRefreshing(true);
     try {
-      const res = await fetch(`http://localhost:5000/api/orders?userId=${user?.id || 2}`);
+      const res = await fetch(`${API_BASE}/api/orders?userId=${user?.id || 2}`);
       const data = await res.json();
       let orderList = Array.isArray(data) ? data : [];
 
       // If a newOrderCode is specified in URL and not in user list, fetch it specifically
       if (newOrderCode && !orderList.some(o => o.order_code === newOrderCode)) {
         try {
-          const sRes = await fetch(`http://localhost:5000/api/orders/${newOrderCode}`);
+          const sRes = await fetch(`${API_BASE}/api/orders/${newOrderCode}`);
           if (sRes.ok) {
             const sOrder = await sRes.json();
             if (sOrder && sOrder.id) orderList = [sOrder, ...orderList];
@@ -109,7 +110,7 @@ export default function OrdersPage() {
     }
 
     try {
-      const res = await fetch(`http://localhost:5000/api/orders/${tokenToSearch}`);
+      const res = await fetch(`${API_BASE}/api/orders/${tokenToSearch}`);
       if (!res.ok) {
         showToast(`Token "${tokenToSearch}" not found in system`, 'error');
         return;
@@ -150,7 +151,7 @@ export default function OrdersPage() {
 
   const confirmCollected = async (orderId) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/admin/orders/${orderId}/status`, {
+      const res = await fetch(`${API_BASE}/api/admin/orders/${orderId}/status`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status: 'Completed' })

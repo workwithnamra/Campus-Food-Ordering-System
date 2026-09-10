@@ -1,3 +1,4 @@
+import API_BASE from '../utils/api.js';
 ﻿import React, { useState } from 'react';
 import { X, ShieldCheck, Loader2, CheckCircle2, AlertCircle, Sparkles, Building2 } from 'lucide-react';
 
@@ -29,7 +30,7 @@ export default function RazorpayModal({ isOpen, onClose, amount, orderDetails, o
     setStatus('creating');
     setErrorMsg('');
     try {
-      const orderRes = await fetch('http://localhost:5000/api/payments/create-order', {
+      const orderRes = await fetch(`${API_BASE}/api/payments/create-order`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ amount: Math.round(amount * 100) })
@@ -58,7 +59,7 @@ export default function RazorpayModal({ isOpen, onClose, amount, orderDetails, o
         handler: async (response) => {
           setStatus('verifying');
           try {
-            const verifyRes = await fetch('http://localhost:5000/api/payments/verify', {
+            const verifyRes = await fetch(`${API_BASE}/api/payments/verify`, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({

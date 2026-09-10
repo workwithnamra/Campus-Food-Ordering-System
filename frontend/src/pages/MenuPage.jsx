@@ -1,3 +1,4 @@
+import API_BASE from '../utils/api.js';
 import React, { useState, useEffect } from 'react';
 import { Search, SlidersHorizontal, Leaf, Sparkles, ShoppingBag, ArrowRight, X, AlertCircle, Bot, Zap, Dumbbell } from 'lucide-react';
 import FoodCard from '../components/FoodCard';
@@ -38,7 +39,7 @@ export default function MenuPage({ jainOnly, selectedCanteen, setSelectedCanteen
       if (maxPrice) params.append('maxPrice', maxPrice);
       if (sortBy) params.append('sort', sortBy);
 
-      const res = await fetch(`http://localhost:5000/api/menu?${params.toString()}`);
+      const res = await fetch(`${API_BASE}/api/menu?${params.toString()}`);
       const data = await res.json();
       let fetchedItems = data.items || [];
 

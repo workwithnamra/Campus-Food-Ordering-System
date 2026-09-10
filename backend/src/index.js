@@ -440,8 +440,12 @@ app.get('/api/payments/key', (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`🔥 SVKM Crazy Canteen Backend is LIVE on port ${PORT}`);
-  console.log(`🚀 Total Menu Items: ${store.data.menu.length}`);
-  console.log(`💳 Razorpay Gateway: ${process.env.RAZORPAY_KEY_ID ? '✅ ACTIVE (' + process.env.RAZORPAY_KEY_ID + ')' : '❌ NOT CONFIGURED'}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`🔥 SVKM Crazy Canteen Backend is LIVE on port ${PORT}`);
+    console.log(`🚀 Total Menu Items: ${store.data.menu.length}`);
+    console.log(`💳 Razorpay Gateway: ${process.env.RAZORPAY_KEY_ID ? '✅ ACTIVE (' + process.env.RAZORPAY_KEY_ID + ')' : '❌ NOT CONFIGURED'}`);
+  });
+}
+
+module.exports = app;

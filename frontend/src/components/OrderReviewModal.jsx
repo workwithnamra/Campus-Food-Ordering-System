@@ -1,3 +1,4 @@
+import API_BASE from '../utils/api.js';
 import React, { useState } from 'react';
 import { X, Star, ThumbsUp, Sparkles, Check } from 'lucide-react';
 
@@ -32,7 +33,7 @@ export default function OrderReviewModal({ order, isOpen, onClose, onReviewSubmi
     e.preventDefault();
     setSubmitting(true);
     try {
-      const res = await fetch(`http://localhost:5000/api/orders/${order.id}/review`, {
+      const res = await fetch(`${API_BASE}/api/orders/${order.id}/review`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

@@ -1,0 +1,16 @@
+﻿services:
+  - type: web
+    name: svkm-canteen-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node src/index.js
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: RAZORPAY_KEY_ID
+        value: rzp_test_TaEQGnAaJW2oln
+      - key: RAZORPAY_KEY_SECRET
+        value: dsEoykx5l1vORgSo1oQHLyK8
+      - key: NODE_ENV
+        value: production

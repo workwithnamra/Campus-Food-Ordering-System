@@ -1,3 +1,4 @@
+import API_BASE from '../utils/api.js';
 import React, { useState, useEffect } from 'react';
 import { Gift, Sparkles, Trophy, Award, Copy, Check, ShieldCheck, Tag, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -14,7 +15,7 @@ export default function LoyaltyRewardsPage() {
   const ordersRemaining = 5 - progress;
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/coupons')
+    fetch(`${API_BASE}/api/coupons`)
       .then(res => res.json())
       .then(data => setCoupons(data))
       .catch(err => console.error(err));

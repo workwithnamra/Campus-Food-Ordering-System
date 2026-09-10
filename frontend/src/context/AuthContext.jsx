@@ -1,3 +1,4 @@
+import API_BASE from '../utils/api.js';
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const AuthContext = createContext();
@@ -26,7 +27,7 @@ export const AuthProvider = ({ children }) => {
   // Sync user coins live with backend
   useEffect(() => {
     if (!user?.id) return;
-    fetch(`http://localhost:5000/api/users/${user.id}/coins`)
+    fetch(`${API_BASE}/api/users/${user.id}/coins`)
       .then(res => res.json())
       .then(data => {
         if (data && typeof data.coins === 'number') {

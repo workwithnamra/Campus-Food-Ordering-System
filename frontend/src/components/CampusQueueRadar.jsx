@@ -1,3 +1,4 @@
+import API_BASE from '../utils/api.js';
 import React, { useState, useEffect } from 'react';
 import { Clock, Users, MapPin, Sparkles, AlertCircle, ChevronRight, RefreshCw } from 'lucide-react';
 
@@ -40,7 +41,7 @@ export default function CampusQueueRadar({ selectedCanteen, setSelectedCanteen, 
 
   const fetchRadarData = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/queue-radar');
+      const res = await fetch(`${API_BASE}/api/queue-radar`);
       if (res.ok) {
         const data = await res.json();
         if (Array.isArray(data.radar) && data.radar.length > 0) {
